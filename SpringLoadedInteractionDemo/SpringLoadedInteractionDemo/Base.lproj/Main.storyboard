@@ -71,7 +71,7 @@
                                 <rect key="frame" x="310" y="84" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="clickSwitchBtn:" destination="BYZ-38-t0r" eventType="valueChanged" id="03F-Kd-qsa"/>
+                                    <action selector="clickSwitchBtn:" destination="BYZ-38-t0r" eventType="valueChanged" id="dmn-pJ-vxt"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="开关" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iip-e3-xiV">
@@ -129,6 +129,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ODD-kW-Eok" customClass="TabBarViewController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="7eq-hR-vRF">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>

@@ -14,6 +14,8 @@
 		FA023BB01F31F0ED0087E302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA023BAE1F31F0ED0087E302 /* LaunchScreen.storyboard */; };
 		FA023BB31F31F0ED0087E302 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA023BB21F31F0ED0087E302 /* main.m */; };
 		FA023BBE1F31F2A90087E302 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA023BBD1F31F2A90087E302 /* TabBarViewController.m */; };
+		FAF111861F31FEFE00A49884 /* UIDragLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF111801F31FDD800A49884 /* UIDragLabel.m */; };
+		FAF111871F31FF0700A49884 /* UIView+SpringLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF111851F31FEE400A49884 /* UIView+SpringLoading.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +33,8 @@
 		FA023BBD1F31F2A90087E302 /* TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		FAF111801F31FDD800A49884 /* UIDragLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDragLabel.m; sourceTree = "<group>"; };
 		FAF111811F31FDD800A49884 /* UIDragLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIDragLabel.h; sourceTree = "<group>"; };
-		FAF111821F31FDD800A49884 /* UIView+SpringLoading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SpringLoading.h"; sourceTree = "<group>"; };
-		FAF111831F31FDDB00A49884 /* UIView+SpringLoading.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SpringLoading.m"; sourceTree = "<group>"; };
+		FAF111841F31FEE400A49884 /* UIView+SpringLoading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SpringLoading.h"; sourceTree = "<group>"; };
+		FAF111851F31FEE400A49884 /* UIView+SpringLoading.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SpringLoading.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,8 @@
 			children = (
 				FAF111811F31FDD800A49884 /* UIDragLabel.h */,
 				FAF111801F31FDD800A49884 /* UIDragLabel.m */,
-				FAF111831F31FDDB00A49884 /* UIView+SpringLoading.m */,
-				FAF111821F31FDD800A49884 /* UIView+SpringLoading.h */,
+				FAF111841F31FEE400A49884 /* UIView+SpringLoading.h */,
+				FAF111851F31FEE400A49884 /* UIView+SpringLoading.m */,
 				FA023BA21F31F0ED0087E302 /* SpringLoadedInteractionDemo */,
 				FA023BA11F31F0ED0087E302 /* Products */,
 			);
@@ -154,7 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF111871F31FF0700A49884 /* UIView+SpringLoading.m in Sources */,
 				FA023BBE1F31F2A90087E302 /* TabBarViewController.m in Sources */,
+				FAF111861F31FEFE00A49884 /* UIDragLabel.m in Sources */,
 				FA023BA81F31F0ED0087E302 /* ViewController.m in Sources */,
 				FA023BB31F31F0ED0087E302 /* main.m in Sources */,
 				FA023BA51F31F0ED0087E302 /* AppDelegate.m in Sources */,

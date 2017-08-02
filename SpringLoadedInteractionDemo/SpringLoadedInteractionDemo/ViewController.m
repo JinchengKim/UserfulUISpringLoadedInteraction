@@ -37,7 +37,7 @@
 }
 
 - (void)openSpring{
-    self.barButtonItem.springLoaded = YES;
+    [self.barButtonItem setSpringLoaded:YES];
     
     [self.stepper setCanSpringLoaded:YES];
     [self.stepper setHandleViewActivationBlock:^{
@@ -87,7 +87,7 @@
 }
 
 - (void)closeSpring{
-    self.barButtonItem.springLoaded = NO;
+    [self.barButtonItem setSpringLoaded:NO];
     
     [self.stepper setCanSpringLoaded:NO];
     
@@ -110,7 +110,7 @@
 }
 
 - (IBAction)clickSwitchBtn:(id)sender {
-    if(self.switchBtn.on == YES){
+    if([self.switchBtn isOn] == YES){
         [self openSpring];
     }else{
         [self closeSpring];

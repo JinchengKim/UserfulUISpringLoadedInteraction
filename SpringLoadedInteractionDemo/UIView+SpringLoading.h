@@ -10,7 +10,6 @@
 typedef void(^HandleViewActivationBlock) (void);
 
 @interface UIView (SpringLoading)
-- (void)addSpringLoadingInteraction;
-- (void)removeSpringLoadingInteraction;
+- (void)setCanSpringLoaded:(BOOL)canSpringLoaded;
 - (void)setHandleViewActivationBlock:(HandleViewActivationBlock )block;
 @end

@@ -24,6 +24,7 @@ static void *kHandelViewActivationBlock;
 
 - (void)removeSpringLoadingInteraction{
     [self removeInteraction:[self getSpringLoadedInteraction]];
+    [self setHandleViewActivationBlock:nil];
 }
 
 #pragma mark - @Getter & Setter
@@ -37,6 +38,7 @@ static void *kHandelViewActivationBlock;
                 block();
             }
         }];
+        objc_setAssociatedObject(self, &kSpringLoadedInteraction, springInteraction, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
     return springInteraction;
 }
@@ -56,6 +58,11 @@ static void *kHandelViewActivationBlock;
 
 - (void)setCanSpringLoaded:(BOOL)canSpringLoaded{
     objc_setAssociatedObject(self, &kCanSpringLoaded, [NSNumber numberWithBool:canSpringLoaded], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    if (canSpringLoaded) {
+        [self addSpringLoadingInteraction];
+    }else{
+        [self removeSpringLoadingInteraction];
+    }
 }
 
 - (HandleViewActivationBlock)getHandleViewActivationBlock{
